@@ -2,6 +2,8 @@
 
 This is an api created speficialy for food-blog project
 
+Postman collection in `postman-testing` directory is provided for easier testing.
+
 # Authentication
 
 Api can be launched either with authentication or without. This is controlled by `AUTH_ENABLED` variable in `.ENV` file.
