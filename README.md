@@ -10,6 +10,8 @@ If enabled then on `/api/public` routes either `USER_API_KEY` or `ADMIN_API_KEY`
 
 On `/api/admin` routes only `ADMIN_API_KEY` will be checked.
 
+If header does not exist or key is wrong `403` will be returned.
+
 # Posts routes
 
 ## GET /api/public/posts
@@ -264,4 +266,18 @@ Request example:
 ## DELETE /api/admin/comments/:id
 
 Deletes comment. Responds with `204` on success. Responds with `404` if comment does not exist.
+
+# Admin check routes
+
+## POST /api/public/admin
+
+Checks if provided key matches the admin key. If it matches `204` is returned, if not then `401` is returned.
+
+Request example:
+
+```
+{
+    "key": "someKey"
+}
+```
 

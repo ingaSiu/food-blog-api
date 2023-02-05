@@ -177,7 +177,7 @@ const validateAdminCheck = (admin) => {
     isValid: true,
     errors: [],
   };
-  if (!admin || typeof category !== 'object') {
+  if (!admin || typeof admin !== 'object') {
     validationResult.isValid = false;
     validationResult.errors.push('Request content has to be object');
     return validationResult;
