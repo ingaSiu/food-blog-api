@@ -19,13 +19,13 @@ const adminApiKey = process.env.ADMIN_API_KEY;
 
 const { MongoClient, ObjectId } = require('mongodb');
 
-const uri = process.env.URI;
+const dbConStr = process.env.DB_CON_STR;
 
 app.use(helmet());
 app.use(cors());
 app.use(express.json());
 
-const client = new MongoClient(uri);
+const client = new MongoClient(dbConStr);
 
 app.listen(port, () => {
   console.log(`Servers is running on the ${port}`);

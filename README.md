@@ -4,6 +4,16 @@ This is an api created speficialy for food-blog project
 
 Postman collection in `postman-testing` directory is provided for easier testing.
 
+# Database
+
+Requirements for MongoDB
+
+- Add MongoDB connection string to `.ENV` variable `DB_CON_STR`
+- Make sure that database `food-blog` exits
+- Make sure that collection `posts` exits
+- Make sure that collection `categories` exits
+- Make sure that collection `comments` exits
+
 # Authentication
 
 Api can be launched either with authentication or without. This is controlled by `AUTH_ENABLED` variable in `.ENV` file.
