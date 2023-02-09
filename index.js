@@ -221,6 +221,7 @@ app.get('/api/public/posts', async (req, res) => {
       .project({
         _id: '$_id',
         title: '$title',
+        imageUrl: '$imageUrl',
         categoryId: '$categoryId',
         createdAt: '$createdAt',
         updatedAt: '$updatedAt',
@@ -607,4 +608,3 @@ app.post('/api/public/admin', async (req, res) => {
   }
 });
 // ---Admin check END
-
