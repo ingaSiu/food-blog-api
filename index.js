@@ -403,6 +403,7 @@ app.get('/api/public/categories-posts/:id', async (req, res) => {
       .project({
         _id: '$_id',
         title: '$title',
+        imageUrl: '$imageUrl',
         categoryId: '$categoryId',
         createdAt: '$createdAt',
         updatedAt: '$updatedAt',

@@ -37,6 +37,7 @@ Response example:
     {
         "_id": "63df7d00d336457c856d48ec",
         "title": "First post edited",
+        "imageUrl": "https://www.biggerbolderbaking.com/wp-content/uploads/2021/02/New-York-Style-Pizza-Thumbnail1-scaled.jpg",
         "categoryId": "63df89470f48be4e28734634",
         "createdAt": 1675590912997,
         "updatedAt": 1675595143127
@@ -155,6 +156,7 @@ Response example:
     {
         "_id": "63df7d00d336457c856d48ec",
         "title": "First post edited",
+        "imageUrl": "https://www.biggerbolderbaking.com/wp-content/uploads/2021/02/New-York-Style-Pizza-Thumbnail1-scaled.jpg",
         "categoryId": "63df89470f48be4e28734634",
         "createdAt": 1675590912997,
         "updatedAt": 1675595143127
@@ -292,4 +294,3 @@ Request example:
     "key": "someKey"
 }
 ```
-
