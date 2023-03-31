@@ -49,6 +49,7 @@ const authMiddleware = (req, res, next) => {
     return next(res.status(403).send());
   }
   if (
+    // eslint-disable-next-line operator-linebreak
     req.originalUrl.toLowerCase().startsWith('/api/public') &&
     (req.headers.authorization === `Bearer ${userApiKey}` || req.headers.authorization === `Bearer ${adminApiKey}`)
   ) {
