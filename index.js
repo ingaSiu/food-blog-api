@@ -223,6 +223,7 @@ app.get('/api/public/posts', async (req, res) => {
         _id: '$_id',
         title: '$title',
         imageUrl: '$imageUrl',
+        content: '$content',
         categoryId: '$categoryId',
         createdAt: '$createdAt',
         updatedAt: '$updatedAt',
@@ -283,6 +284,7 @@ app.put('/api/admin/posts/:id', async (req, res) => {
     const { id } = req.params;
     const filter = { _id: ObjectId(id) };
     const valid = validatePost(req.body);
+    console.log(req.body);
     if (!valid.isValid) {
       return res.status(400).send({ error: valid.errors });
     }
